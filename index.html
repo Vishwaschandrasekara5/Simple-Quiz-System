@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Knowledge Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz-container">
+        <h2>General Knowledge Quiz</h2>
+        <form id="quiz-form">
+            <div class="question" id="question-1">
+                <p>1. What is the capital of France?</p>
+                <label>
+                    <input type="radio" name="q1" value="a"> a) Paris
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="b"> b) Rome
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="c"> c) Berlin
+                </label>
+            </div>
+
+            <div class="question" id="question-2" style="display:none;">
+                <p>2. Which planet is known as the Red Planet?</p>
+                <label>
+                    <input type="radio" name="q2" value="a"> a) Venus
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="b"> b) Mars
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="c"> c) Jupiter
+                </label>
+            </div>
+
+            <div class="question" id="question-3" style="display:none;">
+                <p>3. Who wrote the play "Romeo and Juliet"?</p>
+                <label>
+                    <input type="radio" name="q3" value="a"> a) William Shakespeare
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="b"> b) Jane Austen
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="c"> c) Charles Dickens
+                </label>
+            </div>
+
+            <div class="question" id="question-4" style="display:none;">
+                <p>4. What is the largest ocean on Earth?</p>
+                <label>
+                    <input type="radio" name="q4" value="a"> a) Atlantic Ocean
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="b"> b) Indian Ocean
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="c"> c) Pacific Ocean
+                </label>
+            </div>
+
+            <div class="question" id="question-5" style="display:none;">
+                <p>5. Who painted the Mona Lisa?</p>
+                <label>
+                    <input type="radio" name="q5" value="a"> a) Vincent van Gogh
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="b"> b) Leonardo da Vinci
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="c"> c) Pablo Picasso
+                </label>
+            </div>
+
+            <div class="question" id="question-6" style="display:none;">
+                <p>6. What is the currency of Japan?</p>
+                <label>
+                    <input type="radio" name="q6" value="a"> a) Yen
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="b"> b) Won
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="c"> c) Yuan
+                </label>
+            </div>
+
+            <div class="question" id="question-7" style="display:none;">
+                <p>7. Who wrote "To Kill a Mockingbird"?</p>
+                <label>
+                    <input type="radio" name="q7" value="a"> a) J.K. Rowling
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="b"> b) Harper Lee
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="c"> c) George Orwell
+                </label>
+            </div>
+
+            <div class="question" id="question-8" style="display:none;">
+                <p>8. In which year did World War II end?</p>
+                <label>
+                    <input type="radio" name="q8" value="a"> a) 1943
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="b"> b) 1945
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="c"> c) 1950
+                </label>
+            </div>
+
+            <div class="question" id="question-9" style="display:none;">
+                <p>9. What is the capital of Australia?</p>
+                <label>
+                    <input type="radio" name="q9" value="a"> a) Sydney
+                </label>
+                <label>
+                    <input type="radio" name="q9" value="b"> b) Melbourne
+                </label>
+                <label>
+                    <input type="radio" name="q9" value="c"> c) Canberra
+                </label>
+            </div>
+
+            <div class="question" id="question-10" style="display:none;">
+                <p>10. Who was the first President of the United States?</p>
+                <label>
+                    <input type="radio" name="q10" value="a"> a) Thomas Jefferson
+                </label>
+                <label>
+                    <input type="radio" name="q10" value="b"> b) George Washington
+                </label>
+                <label>
+                    <input type="radio" name="q10" value="c"> c) John Adams
+                </label>
+            </div>
+
+            <button type="button" onclick="prevQuestion()">Previous</button>
+            <button type="button" onclick="nextQuestion()">Next</button>
+            <button type="button" id="submitBtn" style="display:none; background-color: blue; margin: 10px; color: white;" onclick="submitQuiz()">Submit</button>
+
+        </form>
+
+        <div id="results-container" class="results-container" style="display:none;">
+            <h2>Results</h2>
+            <p id="results"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
